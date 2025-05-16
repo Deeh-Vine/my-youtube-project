@@ -1,0 +1,27 @@
+.search-wrapper {
+  position: relative;
+  width: 40px; /* Small by default */
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 8px 30px 8px 10px;
+  border: 2px solid #333;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.search-wrapper:focus-within {
+  width: 200px; /* Expands on focus */
+}
