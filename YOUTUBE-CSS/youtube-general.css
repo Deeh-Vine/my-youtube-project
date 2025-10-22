@@ -7,5 +7,23 @@ body{
    font-family: roboto, arial;
    background-color: rgb(245, 245, 245);
    margin: 0;
-   height: 2000px;
+}
+body.active .sidebar{
+   display: none;
+}
+ body.active .max-sidebar{
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   margin-left: 1rem;
+   position: sticky;
+   overflow-y: auto;
+   overflow-x: hidden;
+   top: 125px;
+   background-color: rgb(255, 255, 255);
+   gap:2.5rem;
+   height: 80.5vh;
+}
+body.active main{
+   grid-template-columns: 226px 1fr;
 }

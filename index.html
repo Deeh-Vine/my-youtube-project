@@ -99,7 +99,41 @@ t@0,100..900;1,100..900&display=swap" rel="stylesheet">
                <div>User</div>
             </button>
          </a>
-   </nav>
+      </nav>
+      <nav class="max-sidebar">
+         <button class="maxsidebar-button">
+            <img src="images/home.svg" alt="" class="sidebar-icons"> <div>Home</div>
+         </button>
+         <a href="https://www.youtube.com/shorts" rel="noopener noreferrer">
+            <button class="maxsidebar-button">
+               <img src="sidebar icons/icons8-youtube-shorts-24.png" alt="" class="sidebar-icons">
+               <div>Shorts</div>
+            </button>
+         </a>
+         <a href="https://www.youtube.com/feed/subscriptions">
+            <button class="maxsidebar-button">
+               <img src="sidebar icons/download-removebg-preview (1).png" alt="" class="sidebar-icons"> <div>subscriptions</div>
+            </button>
+         </a>
+         <a href="https://studio.youtube.com/channel/UCimXGuaK4wC2zEHV1IgAgEA/videos">
+            <button            class="maxsidebar-button">
+               <img src="sidebar icons/youtube.png" alt="" class="sidebar-icons">
+               <div>Originals</div>
+            </button>
+         </a>
+         <a href="https://music.youtube.com/">
+            <button class="maxsidebar-button">
+               <img src="sidebar icons/youtube-music.svg" alt="" class="sidebar-icons">
+               <div>Youtube music</div>
+            </button>
+         </a>
+         <a href="https://www.youtube.com/@deeh_vine__geek_tech">
+            <button class="maxsidebar-button">
+               <img src="sidebar icons/user.png" alt="" class="sidebar-icons">
+               <div>User</div>
+            </button>
+         </a>
+      </nav>
    <section class="videos-sector">   
             <!--first image-->
          <a href="https://www.youtube.com/watch?v=IrHTT2IEKpE">
@@ -441,6 +475,14 @@ t@0,100..900;1,100..900&display=swap" rel="stylesheet">
    </div>
    </section>
 </main>
-   
+   <script>
+      const menubtn = document.querySelector('.menu-button');
+      const body = document.body;
+      menubtn.addEventListener('click', menutoggle)
+      function menutoggle() {
+         body.classList.toggle('active');
+      }
+   </script>
 </body>
+
 </html>
